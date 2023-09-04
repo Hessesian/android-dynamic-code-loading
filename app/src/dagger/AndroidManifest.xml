@@ -14,8 +14,7 @@
   ~ limitations under the License.
   ~
   -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-          package="com.google.android.samples.dynamiccodeloading">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
 
     <application
             tools:replace="android:name"

@@ -1,1 +1,2 @@
 include ':app', ':storage'
+include ':baselineprofile'

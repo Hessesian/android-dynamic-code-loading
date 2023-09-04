@@ -19,6 +19,13 @@ android {
             proguardFiles 'proguard-rules.pro'
         }
     }
+    kotlin {
+        jvmToolchain(17)
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
 
     flavorDimensions "codeLoading"
 
@@ -35,11 +42,11 @@ android {
             dimension "codeLoading"
         }
     }
-
+    namespace 'com.google.android.samples.storage'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':app')
-    kapt 'com.google.dagger:dagger-compiler:2.43.1'
+    kapt 'com.google.dagger:dagger-compiler:2.48'
 }
